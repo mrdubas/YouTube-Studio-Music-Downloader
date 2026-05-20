@@ -1,5 +1,8 @@
 # YouTube Studio Music Downloader
 
+<img width="1919" height="909" alt="Screenshot 2026-05-20 223331" src="https://github.com/user-attachments/assets/7801254c-ff5c-426a-8b45-a2592c1f7118" />
+
+
 Manifest V3 Chrome/Edge extension for downloading free music tracks from YouTube Studio with clean metadata-based filenames.
 
 ## Install
@@ -7,7 +10,10 @@ Manifest V3 Chrome/Edge extension for downloading free music tracks from YouTube
 1. Open `chrome://extensions/` or `edge://extensions/`.
 2. Enable Developer mode.
 3. Click `Load unpacked`.
-4. Select this project folder.
+4. Select this project folder (If everything is working properly, it should look like the screenshot)
+<img width="409" height="218" alt="Screenshot 2026-05-20 223630" src="https://github.com/user-attachments/assets/3eb933e4-1c54-462c-9cbf-ce03925a7f53" />
+
+
 5. Open `https://studio.youtube.com/channel/<your-channel-id>/music`.
 6. Reload the YouTube Studio page after installing or reloading the extension.
 
