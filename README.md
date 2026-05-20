@@ -43,3 +43,11 @@ The 8-page sample download button is still implemented but hidden by default. To
 ## Notes
 
 The extension uses YouTube Studio API responses from the current browser tab, requests direct download URLs in batches, and starts browser-managed downloads through the `chrome.downloads` API.
+
+## Acknowledgements
+
+This extension was inspired by the archived project
+[youtube-audio-library-downloader](https://github.com/Ragnarokkr/youtube-audio-library-downloader)
+by Ragnarokkr.
+
+While this project was developed independently, that extension helped shape the idea and approach.
