@@ -1,0 +1,6 @@
+{
+  "name": "youtube-studio-music-downloader",
+  "version": "0.1.12",
+  "private": true,
+  "description": "Manifest V3 Chrome extension for downloading YouTube Studio music tracks."
+}

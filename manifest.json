@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "version": "0.1.12",
+  "minimum_chrome_version": "88",
+  "permissions": [ "downloads", "notifications" ],
+  "host_permissions": [
+    "https://www.youtube.com/audiolibrary*",
+    "https://studio.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "js/eventPage.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/audiolibrary*",
+        "https://studio.youtube.com/*"
+      ],
+      "js": ["js/page_hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/audiolibrary*",
+        "https://studio.youtube.com/*"
+      ],
+      "js": ["js/page_hook_loader.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/audiolibrary*",
+        "https://studio.youtube.com/*"
+      ],
+      "css": ["css/inject_style.css"],
+      "js": ["js/commons.js", "js/inject_script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["js/page_hook.js"],
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://studio.youtube.com/*"
+      ]
+    }
+  ],
+  "default_locale": "en",
+  "icons": {
+    "16": "img/logo.png",
+    "48": "img/logo.png",
+    "128": "img/logo.png"
+  }
+}

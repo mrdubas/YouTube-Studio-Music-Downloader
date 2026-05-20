@@ -1,0 +1,158 @@
+{
+    "extName": {
+        "message": "YouTube Studio Music Downloader",
+        "description": "Extension name"
+    },
+    "extDescription": {
+        "message": "Download free YouTube Studio music tracks with clean metadata-based filenames.",
+        "description": "Extension description"
+    },
+    "lblDownloadAllTracks": {
+        "message": "Download all tracks",
+        "description": "Label for the button used to download all detected audio tracks"
+    },
+    "lblDownloadCurrentPage": {
+        "message": "Download page",
+        "description": "Label for the button used to download only the currently loaded YouTube Studio music page."
+    },
+    "lblDownloadCurrentPageNote": {
+        "message": "Downloads only the tracks currently loaded in the visible YouTube Studio music page.",
+        "description": "Tooltip text for the current page download button."
+    },
+    "lblDownloadAllTracksNote": {
+        "message": "Collects every YouTube Studio music page, prepares direct URLs, then sends downloads to the browser.",
+        "description": "Tooltip text for the download button."
+    },
+    "msgScanningPage": {
+        "message": "Scanning page...",
+        "description": "Status shown while the content script scans the current page."
+    },
+    "msgAudioTrackFound": {
+        "message": "1 audio track found. Download will start soon.",
+        "description": "Notification message displayed when 1 track is detected."
+    },
+    "msgAudioTracksFound": {
+        "message": "$TRACK_COUNT$ audio track(s) found. Download will start soon.",
+        "description": "Notification message displayed when tracks are detected.",
+        "placeholders": {
+            "track_count": {
+                "content": "$1",
+                "example": "42"
+            }
+        }
+    },
+    "msgQueuedDownloads": {
+        "message": "$TRACK_COUNT$ download(s) sent to the browser.",
+        "description": "Status shown after URLs have been handed to the browser download manager.",
+        "placeholders": {
+            "track_count": {
+                "content": "$1",
+                "example": "42"
+            }
+        }
+    },
+    "msgWaitingForDirectUrls": {
+        "message": "Waiting for direct download URLs...",
+        "description": "Status shown while the extension waits for captured YouTube Studio API data."
+    },
+    "msgCollectingAllPages": {
+        "message": "Collecting all YouTube Studio music pages...",
+        "description": "Status shown before the extension starts paginating through YouTube Studio music pages."
+    },
+    "msgCollectingPages": {
+        "message": "Collecting page $PAGE_NUMBER$: $COLLECTED_COUNT$ / $TOTAL_COUNT$ tracks...",
+        "description": "Status shown while YouTube Studio music pages are being collected.",
+        "placeholders": {
+            "page_number": {
+                "content": "$1",
+                "example": "3"
+            },
+            "collected_count": {
+                "content": "$2",
+                "example": "300"
+            },
+            "total_count": {
+                "content": "$3",
+                "example": "2398"
+            }
+        }
+    },
+    "msgCollectingCurrentPage": {
+        "message": "Collecting current page: $TRACK_COUNT$ tracks...",
+        "description": "Status shown while the current YouTube Studio music page is being collected.",
+        "placeholders": {
+            "track_count": {
+                "content": "$1",
+                "example": "30"
+            }
+        }
+    },
+    "msgPreparingDownloads": {
+        "message": "Preparing downloads: $PREPARED_COUNT$ / $TOTAL_COUNT$ tracks...",
+        "description": "Status shown while direct download URLs are being prepared.",
+        "placeholders": {
+            "prepared_count": {
+                "content": "$1",
+                "example": "300"
+            },
+            "total_count": {
+                "content": "$2",
+                "example": "2398"
+            }
+        }
+    },
+    "msgCollectionTimedOut": {
+        "message": "Timed out while collecting YouTube Studio music pages.",
+        "description": "Status shown when full page collection takes too long."
+    },
+    "msgCollectionFailed": {
+        "message": "Could not collect YouTube Studio music pages. Reload the extension, refresh YouTube Studio, then try again.",
+        "description": "Status shown when full page collection fails."
+    },
+    "msgDirectUrlsNotReady": {
+        "message": "Direct download URLs are not ready yet. Reload the YouTube Studio page after reloading the extension, then scroll the loaded tracks again.",
+        "description": "Status shown when direct URLs have not been captured and UI button fallback is disabled."
+    },
+    "msgNativeDownloadButtonsFound": {
+        "message": "$TRACK_COUNT$ native download button(s) found. Starting them immediately.",
+        "description": "Notification shown when no direct URLs were found but page buttons were detected.",
+        "placeholders": {
+            "track_count": {
+                "content": "$1",
+                "example": "42"
+            }
+        }
+    },
+    "msgNativeDownloadButtonsClicked": {
+        "message": "$TRACK_COUNT$ page download button(s) clicked.",
+        "description": "Status shown after native download buttons have been clicked.",
+        "placeholders": {
+            "track_count": {
+                "content": "$1",
+                "example": "42"
+            }
+        }
+    },
+    "msgDownloadFinishedWithErrors": {
+        "message": "$STARTED_COUNT$ download(s) started, $FAILED_COUNT$ failed.",
+        "description": "Notification shown after a batch download partially fails.",
+        "placeholders": {
+            "started_count": {
+                "content": "$1",
+                "example": "40"
+            },
+            "failed_count": {
+                "content": "$2",
+                "example": "2"
+            }
+        }
+    },
+    "msgDownloadRequestFailed": {
+        "message": "The browser could not start some downloads.",
+        "description": "Status shown when the download request fails."
+    },
+    "msgAudioTracksNotFound": {
+        "message": "No audio tracks found. Check your filters and scroll the YouTube Studio music list until the tracks are loaded.",
+        "description": "Notification message displayed when no track can be detected."
+    }
+}
